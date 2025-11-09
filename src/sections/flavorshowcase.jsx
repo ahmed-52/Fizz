@@ -10,20 +10,6 @@ const FlavorsShowcase = () => {
   const canRefs = useRef([]);
   const [bgColor, setBgColor] = useState('#D92F8A'); // pink/strawberry
 
-  const scrollToEmail = () => {
-    const emailSection = document.getElementById('email-signup');
-    if (emailSection) {
-      emailSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Focus on the email input after scrolling
-      setTimeout(() => {
-        const emailInput = emailSection.querySelector('input[type="email"]');
-        if (emailInput) {
-          emailInput.focus();
-        }
-      }, 500);
-    }
-  };
-
   const cans = [
     { 
       name: 'Strawberry Dream', 
@@ -278,10 +264,7 @@ const FlavorsShowcase = () => {
                   </div>
                   
                   {/* CTA Button */}
-                  <button 
-                    onClick={scrollToEmail}
-                    className="bg-white text-black font-black text-lg px-10 py-4 rounded-full border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all"
-                  >
+                  <button className="bg-white text-black font-black text-lg px-10 py-4 rounded-full border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-1 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all">
                     Try {can.name}
                   </button>
                 </div>
