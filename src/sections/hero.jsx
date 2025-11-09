@@ -166,7 +166,7 @@ const Hero = () => {
             </div>
 
             {/* Email Signup */}
-            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div id="email-signup" className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
               {!isSubmitted ? (
                 <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
                   <input
