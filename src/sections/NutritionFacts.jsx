@@ -95,6 +95,14 @@ const NutritionFacts = () => {
                   </p>
                 </div>
               </div>
+
+              {/* Ingredients Section */}
+              <div className="mt-4 pt-3 border-t-4 border-black">
+                <h4 className="text-lg font-black text-yellow-300 mb-2">Ingredients</h4>
+                <p className="text-xs text-white font-medium leading-relaxed">
+                  Carbonated water, whey protein isolate (milk) [Actus PRObev® hydrolyzed WPI], prebiotic fiber (fructooligosaccharides or soluble corn fiber), citric acid, malic acid, natural flavors, L-carnitine L-tartrate, stevia leaf extract (Reb M).
+                </p>
+              </div>
             </div>
 
             {/* Highlight Stats Column */}
