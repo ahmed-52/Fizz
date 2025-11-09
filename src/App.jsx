@@ -1,4 +1,5 @@
 import Hero from './sections/hero'
+import HeroMobile from './sections/heroMobile'
 import Navbar from './sections/navbar'
 import Products from './sections/products'
 import ProteinBenefits from './sections/protein-benefits'
@@ -16,7 +17,14 @@ function App() {
   return (
    <>
     <Navbar />
-    <Hero />
+    {/* Desktop Hero - Hidden on mobile */}
+    <div className="hidden lg:block">
+      <Hero />
+    </div>
+    {/* Mobile Hero - Hidden on desktop */}
+    <div className="lg:hidden">
+      <HeroMobile />
+    </div>
     {/* <ProteinWeightLoss /> */}
     <ProteinBenefits />
     <WeightLossSupport />
