@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./fonts/Recoleta Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./fonts/Recoleta Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./fonts/Recoleta Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./fonts/Recoleta Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('./fonts/Recoleta Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-family-recoleta: 'Recoleta', sans-serif;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float 20s infinite linear;
+}
