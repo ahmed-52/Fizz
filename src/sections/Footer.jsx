@@ -83,26 +83,13 @@ const Footer = () => {
             </p>
           </div>
   
-          {/* Middle Section - Cornell Hackathon Badge */}
-          <div className="flex justify-center mb-8">
-            <div className="bg-white rounded-2xl border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] px-8 py-4 transform hover:translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all">
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">🍕</span>
-                <div className="text-left">
-                  <div className="text-sm font-bold text-gray-600 uppercase tracking-wider">Created at</div>
-                  <div className="text-xl font-black text-black">Cornell Food Hackathon 2025</div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
           {/* Team Section */}
           <div className="text-center mb-8">
             <p className="text-lg font-bold text-black mb-4 flex items-center justify-center gap-2">
               Made with <span className="text-2xl text-red-500 animate-pulse-slow">❤️</span> by
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-2">
-              {['Ahmed Abdulla', 'Farhan Mashrur', 'Eniola Olaleye', 'Julia Wei'].map((name, i) => (
+              {['Ahmed Abdulla', 'Farhan Mashrur'].map((name, i) => (
                 <div
                   key={i}
                   className="bg-white/60 backdrop-blur-sm border-3 border-black rounded-full px-5 py-2 font-black text-black hover:bg-white hover:scale-105 transition-all"

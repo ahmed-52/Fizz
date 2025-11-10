@@ -139,7 +139,7 @@ const Hero = () => {
             {/* Main Headline */}
             <div className="animate-fade-in">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-tight text-black">
-                <span className="text-[#D92F8A] block">FIZZY</span>
+                <span className="text-[#D92F8A] block">PREBIOTIC</span>
                 <span className="block">
                   <span className="text-cyan-500">PROTEIN </span>
                   <span style={{ color: '#E23B01' }}>SODA</span>
